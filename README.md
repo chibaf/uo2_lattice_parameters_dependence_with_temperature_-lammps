@@ -39,4 +39,4 @@ cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
 
   python3 mkinput.py
 
-  
+  python3 runlammps.py  
