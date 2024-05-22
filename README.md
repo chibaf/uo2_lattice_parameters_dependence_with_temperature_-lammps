@@ -35,6 +35,8 @@ cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
 
   ### generate inputs
 
+  python3 fcc111.py > data.fcc111
+
   python3 mkinput.py
 
   
