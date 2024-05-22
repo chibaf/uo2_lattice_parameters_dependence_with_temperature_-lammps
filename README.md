@@ -23,7 +23,7 @@ cd lammps-17Apr2024
 
 cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
 
-  510  cmake --build . -j 8
+  cmake --build . -j 8
 
   ## test
 
