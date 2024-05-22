@@ -1,3 +1,4 @@
+#generate lammps input fies
 for i in range(0,23):
     temp=250+125*i
     fn="in."+str(temp)
