@@ -1,9 +1,9 @@
 # lattice_parameters_dependence_with_temperature_-lammps-
 lattice_parameter_dependence_with_temperatures_(lammps)
 
-macbook air m1 is employed for this calclation
+### macbook air m1 is employed for this calclation
 
-## installation with cmake
+## installation with home brew and cmake
 
 ### openmpi
 
