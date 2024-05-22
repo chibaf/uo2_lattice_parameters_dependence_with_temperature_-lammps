@@ -28,6 +28,6 @@ for i in range(0,23):
     f.write("velocity all create "+str(float(temp))+" 78621 dist gaussian\n")
     f.write("fix NPT all npt temp "+str(float(temp))+" "+str(float(temp))+" 0.005 iso 0.0 0.0 10.0 drag 0.2\n")
     f.write("thermo 10\n")
-    f.write("dump 1 all atom 10 dump.UO2_fcc111-"+str(temp)+"K.gz\n")
-    f.write("run 2000\n")
+    f.write("dump 1 all atom 10 dump.UO2_fcc111-"+str(temp)+"K\n")
+    f.write("run 500\n")
     f.close()
