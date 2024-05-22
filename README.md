@@ -5,11 +5,17 @@ macbook air m1 is employed for this calclation
 
 ## installation with cmake
 
+### openmpi
+
 brew install open-mpi
+
+### fftw
 
 fftw
 
-download and configure
+download tar ball and configure
+
+### lammps
 
 download tar ball
 
