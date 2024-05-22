@@ -17,7 +17,7 @@ uran="1"                # atom type in lammps script
 oxygen="2"              # atom type in lammps script
 #
 d0=b/2
-mx=my=mz=10;      # number of atomsmx,my must be even numbers.
+mx=my=mz=32;      # number of atomsmx,my must be even numbers.
 
 # generating coordinates of Oxygen atom
 list_atom=[]
@@ -57,35 +57,35 @@ for k in range(1,mz+1):   # index for z direction
 #
 #           printing lamms data file
 #
-fw=sys.stdout  # use standard i/o
+f=sys.stdout  # use standard i/o
 #
-fw.write("UO2(111) \n")        # header
-fw.write("\n")
-fw.write(str(len(list_atom))+" atoms\n")  # number of atoms
-fw.write("\n")
-fw.write("0 bonds\n")          # lammps parameter
-fw.write("0 angles\n")         # lammps parameter
-fw.write("0 dihedrals\n")      # lammps parameter
-fw.write("0 impropers\n")      # lammps parameter
-fw.write("\n")
-fw.write("2 atom types\n")     # number of atom types
-fw.write("0 bond types\n")     # lammps parameter
-fw.write("0 angle types\n")    # lammps parameter
-fw.write("0 dihedral types\n") # lammps parameter
-fw.write("0 improper types\n") # lammps parameter
-fw.write("\n")
-fw.write("\n")
+f.write("UO2(111) \n")        # header
+f.write("\n")
+f.write(str(len(list_atom))+" atoms\n")  # number of atoms
+f.write("\n")
+f.write("0 bonds\n")          # lammps parameter
+f.write("0 angles\n")         # lammps parameter
+f.write("0 dihedrals\n")      # lammps parameter
+f.write("0 impropers\n")      # lammps parameter
+f.write("\n")
+f.write("2 atom types\n")     # number of atom types
+f.write("0 bond types\n")     # lammps parameter
+f.write("0 angle types\n")    # lammps parameter
+f.write("0 dihedral types\n") # lammps parameter
+f.write("0 improper types\n") # lammps parameter
+f.write("\n")
+f.write("\n")
 #           range of box
-fw.write(''.join((str(0)," ",str(mx*c)," xlo xhi\n")))   # length of box for x direction
-fw.write(''.join((str(0)," ",str(my*b)," ylo yhi\n")))   # length of box for y direction
-fw.write(''.join((str(0)," ",str(mz*dz)," zlo zhi\n")))  # length of box for z direction
+f.write(''.join((str(0)," ",str(mx*c)," xlo xhi\n")))   # length of box for x direction
+f.write(''.join((str(0)," ",str(my*b)," ylo yhi\n")))   # length of box for y direction
+f.write(''.join((str(0)," ",str(mz*dz)," zlo zhi\n")))  # length of box for z direction
 #
-fw.write("\n")
-fw.write("\n")
+f.write("\n")
+f.write("\n")
 #           print coordinate sets of atoms
-fw.write("Atoms\n")
-fw.write("\n")
+f.write("Atoms\n")
+f.write("\n")
 for i in range(0,len(list_atom)):
- el=list_atom[i]
- s=''.join((str(i+1)," ",el[0]," ",el[1]," ",str(el[2])," ",str(el[3])," ",str(el[4]),"\n"))
- fw.write(s)
+  el=list_atom[i]
+  s=''.join((str(i+1)," ",el[0]," ",el[1]," ",str(el[2])," ",str(el[3])," ",str(el[4]),"\n"))
+  f.write(s)
