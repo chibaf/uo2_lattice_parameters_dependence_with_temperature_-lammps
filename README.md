@@ -30,3 +30,11 @@ cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
   python3 fcc111.py > data.fcc111
 
   mpirun -np 8 lmp < in.1000
+
+  ## computation of lattice parameter of UO2
+
+  ### generate inputs
+
+  python3 mkinput.py
+
+  
