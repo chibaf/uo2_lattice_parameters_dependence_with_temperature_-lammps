@@ -19,4 +19,6 @@ cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
 
   ## test
 
+  python3 fcc111.py > data.fcc111
+
   512  mpirun -np 8 lmp < in.1000
