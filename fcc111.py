@@ -17,7 +17,7 @@ uran="1"                # atom type in lammps script
 oxygen="2"              # atom type in lammps script
 #
 d0=b/2
-mx=my=mz=32;      # number of atomsmx,my must be even numbers.
+mx=my=mz=20;      # number of atomsmx,my must be even numbers.
 
 # generating coordinates of Oxygen atom
 list_atom=[]
