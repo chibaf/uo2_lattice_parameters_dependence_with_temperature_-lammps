@@ -42,3 +42,6 @@ cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
   ### computation of lattice parameters
 
   python3 runlammps.py  
+
+  ![image](https://github.com/chibaf/uo2_lattice_parameters_dependence_with_temperature_-lammps/assets/1296728/3d94f439-3c10-46f7-b458-f66794f2dfe2)
+
