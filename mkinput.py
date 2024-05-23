@@ -24,10 +24,10 @@ for i in range(0,23):
     f.write("pair_coeff 2 2 born/coul/long 0.013806869 0.327022 3.82 3.950633264 0.0 10.0\n")
     # refered to http://lammps.sandia.gov/threads/msg13365.html
     f.write("kspace_style pppm 1.0e-4\n")  # use ewald method
-    f.write("log log.UO2_fcc111-"+str(temp)+"K\n")
+    f.write("log log."+str(temp)+"\n")
     f.write("velocity all create "+str(float(temp))+" 78621 dist gaussian\n")
     f.write("fix NPT all npt temp "+str(float(temp))+" "+str(float(temp))+" 0.005 iso 0.0 0.0 10.0 drag 0.2\n")
     f.write("thermo 10\n")
-    f.write("dump 1 all atom 10 dump.UO2_fcc111-"+str(temp)+"K\n")
-    f.write("run 500\n")
+#    f.write("dump 1 all atom 10 dump.UO2_fcc111-"+str(temp)+"K\n")
+    f.write("run 3000\n")
     f.close()
