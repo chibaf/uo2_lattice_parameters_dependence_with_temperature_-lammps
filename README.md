@@ -39,4 +39,6 @@ cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
 
   python3 mkinput.py
 
+  ### computation of lattice parameters
+
   python3 runlammps.py  
