@@ -1,5 +1,16 @@
 # lattice_parameters_dependence_with_temperature_-lammps-
-lattice_parameter_dependence_with_temperatures_(lammps)
+
+## computation of lattice pamrameters of UO2 for temperatures
+
+lattice parameters of uo2 for temperatures (from 250K to 3000K; step size=125K) were computed.
+
+lammps computed each volume corresponding to each temperature.
+
+lattice parameter was computed as fllows:
+
+c = (initial volume of system)**(1/3)/5.47     # where 5.47 is an initial lattice parameter.
+
+lattice parameter at this temperature = (volume at this temperature)**(1/3) / c
 
 ### macbook air m1 is employed for this calculation
 
