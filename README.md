@@ -56,3 +56,10 @@ cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
 
   ![image](https://github.com/chibaf/uo2_lattice_parameters_dependence_with_temperature_-lammps/assets/1296728/3d94f439-3c10-46f7-b458-f66794f2dfe2)
 
+  ## References
+
+Classical Molecular Dynamics Simulation of UO2 to Predict Thermophysical Properties, Chandra Bhanu Basak, 2003
+
+https://www.researchgate.net/publication/248174824_Classical_Molecular_Dynamics_Simulation_of_UO2_to_Predict_Thermophysical_Properties
+
+
