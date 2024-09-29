@@ -26,7 +26,7 @@ fftw
 
 download tar ball and configure
 
-### lammps installation
+### build of lammps
 
 download tar ball
 
