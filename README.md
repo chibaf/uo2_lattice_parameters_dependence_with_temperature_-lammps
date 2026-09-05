@@ -58,6 +58,12 @@ cmake ../cmake/ -D PKG_KSPACE=yes -D FFT=fftw3
 
   ## References
 
+Download LAMMPS · LAMMPS  
+https://www.lammps.org/download/  
+
+3. Build LAMMPS — LAMMPS documentation  
+https://docs.lammps.org/Build.html  
+
 Classical Molecular Dynamics Simulation of UO2 to Predict Thermophysical Properties, Chandra Bhanu Basak, 2003
 
 https://www.researchgate.net/publication/248174824_Classical_Molecular_Dynamics_Simulation_of_UO2_to_Predict_Thermophysical_Properties
