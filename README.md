@@ -64,8 +64,7 @@ https://www.lammps.org/download/
 Build LAMMPS — LAMMPS documentation  
 https://docs.lammps.org/Build.html  
 
-Classical Molecular Dynamics Simulation of UO2 to Predict Thermophysical Properties, Chandra Bhanu Basak, 2003
-
+Classical Molecular Dynamics Simulation of UO2 to Predict Thermophysical Properties, Chandra Bhanu Basak, 2003  
 https://www.researchgate.net/publication/248174824_Classical_Molecular_Dynamics_Simulation_of_UO2_to_Predict_Thermophysical_Properties
 
 
